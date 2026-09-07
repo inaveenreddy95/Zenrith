@@ -1,0 +1,18 @@
+{
+  "name": "Zenrith Tech — Technology. Talent. Transformation.",
+  "short_name": "Zenrith",
+  "description": "IT consulting, IT staffing & recruitment, RecruitIQ ATS and digital transformation.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fbfcfb",
+  "theme_color": "#17252a",
+  "icons": [
+    {
+      "src": "/assets/zenrith-logo.png",
+      "sizes": "500x500",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
