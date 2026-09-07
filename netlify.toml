@@ -1,0 +1,37 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "http://zenrithtech.com/*"
+  to = "https://zenrithtech.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.zenrithtech.com/*"
+  to = "https://zenrithtech.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
